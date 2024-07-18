@@ -10,14 +10,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 import { BooksControllers } from "./classes/books-controllers.js";
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
-        document.addEventListener('submit', (e) => __awaiter(this, void 0, void 0, function* () {
+        const buttonLogin = document.querySelector('.submitLogin');
+        buttonLogin.addEventListener('click', (e) => __awaiter(this, void 0, void 0, function* () {
             e.preventDefault();
-            const $email = document.querySelector('.email');
-            const $password = document.querySelector('.password');
-            const email = $email.value;
-            const password = $password.value;
+            const email = document.querySelector('.email').value;
+            const password = document.querySelector('.password').value;
             const booksControllers = new BooksControllers('http://190.147.64.47:5155/', 'api/v1/auth/login');
-            let token = yield booksControllers.postLogin({ email, password });
+            let token = yield booksControllers.postLogin({ email: `${email}`, password: `${password}` });
             console.log(token);
         }));
     });
