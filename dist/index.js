@@ -17,7 +17,10 @@ function main() {
             const password = document.querySelector('.password').value;
             const booksControllers = new BooksControllers('http://190.147.64.47:5155/', 'api/v1/auth/login');
             let token = yield booksControllers.postLogin({ email: `${email}`, password: `${password}` });
-            console.log(token);
+            localStorage.setItem('token', token);
+            if (localStorage.getItem('token')) {
+                window.location.href = 'pages/dashboard.html';
+            }
         }));
     });
 }
