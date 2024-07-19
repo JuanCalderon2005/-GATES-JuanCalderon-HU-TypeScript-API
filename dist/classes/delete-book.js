@@ -33,4 +33,18 @@ export class DeleteBooks {
             return Data;
         });
     }
+    deleteAllBooks() {
+        return __awaiter(this, void 0, void 0, function* () {
+            const response = yield fetch('http://190.147.64.47:5155/api/v1/books', {
+                method: 'DELETE',
+                headers: {
+                    'Authorization': `Bearer ${this.token}`
+                }
+            });
+            if (!response.ok) {
+                throw new Error('Error al eliminar todos los libros');
+            }
+            return response.json();
+        });
+    }
 }
