@@ -99,6 +99,8 @@ async function main() {
         });
     });
 
+    
+
     const $createBookButton = document.querySelector('.createButton') as HTMLButtonElement;
     $createBookButton.addEventListener('click', () => {
         const token = localStorage.getItem('token');
