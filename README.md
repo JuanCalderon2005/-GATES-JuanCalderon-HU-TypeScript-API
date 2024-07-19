@@ -1,29 +1,114 @@
+# APIs-Books
 
-# CRUD Users With TypeScript - Functions, (Object Oriented Programming, OOP) Interfaces
+Este proyecto es un software en TypeScript que permite consumir una API de libros u otra convenida con el TL (Team Leader). Se incluyen operaciones de consulta, inserción, actualización y eliminación de datos, así como el envío de parámetros y/o query params y headers. El proyecto utiliza clases, interfaces y las mejores prácticas de programación.
 
-The objective of this exercise is to develop a CRUD (Create, Read, Update, Delete) application for managing users. This application will use TypeScript, HTML, and CSS, and it will be built using object-oriented programming principles, including interfaces.
+## Activación y Funcionamiento
+
+### Prerrequisitos
+
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
+
+- Node.js y npm (o yarn)
+
+### Instalación
+
+1. Clona este repositorio en tu máquina local:
+
+    ```bash
+    git clone https://github.com/JuanCalderon2005/-GATES-JuanCalderon-HU-TypeScript-API.git
+    ```
+
+2. Navega al directorio de tu proyecto:
+
+    ```bash
+    cd tu-proyecto
+    ```
+
+3. Instala las dependencias necesarias:
+
+    ```bash
+    npm install
+    ```
+
+    o
+
+    ```bash
+    yarn install
+    ```
+
+### Ejecución
+
+Para iniciar la transpilación del código a JavaScript, ejecuta el siguiente comando:
+
+```bash
+npm run tsc
+```
 
 
-## Acknowledgements
+### Uso
 
- - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
- - [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
- - [JAVASCRIPT](https://developer.mozilla.org/es/docs/Web/JavaScript)
+Para utilizar este proyecto, sigue los siguientes pasos:
+
+1. Ingresa al navegador con live server:
+
+    ```bash
+    open live server
+    ```
+
+2. Copia el siguiente código:
+
+    ```bash
+    http://127.0.0.1:5500/
+    ```
+
+3. Abre el navegador y pega el código copiado en la barra de direcciones. Presiona Enter.
+
+4. Verás la página principal de la aplicación y podrás interactuar con ella según las funcionalidades que has implementado.
+
+### Autenticación
+
+Para iniciar sesión con rol administrador, utiliza las siguientes credenciales:
+
+- Rol admin:
+  - Email: prueba@prueba.pru
+  - Password: C0ntr4S3gu++r4
+
+### Detalles Adicionales
+
+El proyecto está diseñado para seguir las mejores prácticas de programación en TypeScript, utilizando clases e interfaces para una mejor estructura y mantenibilidad del código.
+
+Echo por:
+Juan Esteban Calderon Nuñez - Gates
 
 
-## Resources
-
-- [TypeScript - Classes](https://www.typescriptlang.org/docs/handbook/2/classes.html)
-- [Base Code Rick and Morty - Get](https://github.com/Stevendev95/rick-morty-ts)
-- [Base Code POO - TS](https://github.com/Stevendev95/typescript-tutorial)
-- [JSON SERVER](https://www.npmjs.com/package/json-server)
-- [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
-- [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
-- [Window replace location JS](https://developer.mozilla.org/en-US/docs/Web/API/Location/replace)
-- [Responsive Web Design - Media Queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
 
 
-## Authors
 
-- [@stevendev95](https://github.com/Stevendev95)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
