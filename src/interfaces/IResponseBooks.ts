@@ -18,3 +18,11 @@ export interface Result {
     deletedAt: null,
     files: string[]
 }
+
+export interface IBooks{
+    title: string,
+    author: string,
+    description: string,
+    summary: string,
+    publicationDate: string
+}   

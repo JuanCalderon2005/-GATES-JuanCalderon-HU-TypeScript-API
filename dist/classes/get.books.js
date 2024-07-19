@@ -53,4 +53,24 @@ export class AllBooks {
             return updatedBookData;
         });
     }
+    createBook(newBook) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const headers = {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${this.token}`
+            };
+            const reqOptions = {
+                method: 'POST',
+                headers: headers,
+                body: JSON.stringify(newBook)
+            };
+            const url = 'http://190.147.64.47:5155/api/v1/books';
+            const result = yield fetch(url, reqOptions);
+            if (result.status !== 201) {
+                throw new Error("Failed to create book");
+            }
+            const createdBookData = yield result.json();
+            return createdBookData;
+        });
+    }
 }

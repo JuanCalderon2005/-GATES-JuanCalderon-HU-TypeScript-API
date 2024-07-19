@@ -180,8 +180,8 @@ body {
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-  }
-  
+  }  
+
   menu button[value="cancel"] {
     background-color: #0a1e33;
     color: white;
@@ -192,3 +192,49 @@ body {
     background-color: #0a1e33;
     color: white;
   }
+
+  .containerbutton{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .btcreate{
+    background-color: #0a1e33;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.dialog button[type="button"] {
+    background-color: #0a1e33; /* Red */
+    color: white;
+}
+
+.dialog button[type="submit"] {
+    background-color: #0a1e33; /* Green */
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
