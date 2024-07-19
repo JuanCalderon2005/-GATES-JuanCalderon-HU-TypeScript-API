@@ -7,31 +7,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-export class AllBooks {
+export class BooksService {
     constructor(token) {
         this.token = token;
-    }
-    getAllBooks() {
-        return __awaiter(this, void 0, void 0, function* () {
-            const headers = {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${this.token}`
-            };
-            const reqOptions = {
-                method: 'GET',
-                headers: headers,
-            };
-            const url = 'http://190.147.64.47:5155/api/v1/books';
-            const result = yield fetch(url, reqOptions);
-            console.log(result.body);
-            if (result.status !== 200) {
-                throw new Error("Conexion fallida");
-            }
-            const Response = JSON.stringify((yield result.json()));
-            const ResponseParse = JSON.parse(Response);
-            const Data = ResponseParse.data;
-            return Data;
-        });
     }
     updateBook(bookId, updatedBook) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -40,7 +18,7 @@ export class AllBooks {
                 'Authorization': `Bearer ${this.token}`
             };
             const reqOptions = {
-                method: 'PUT',
+                method: 'PATCH',
                 headers: headers,
                 body: JSON.stringify(updatedBook)
             };

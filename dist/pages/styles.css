@@ -28,24 +28,38 @@ body {
   }
   
   .card-body {
-    display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card-body:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   
   .card-title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+      font-size: 1.8em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
   }
   
-  .card-subtitle {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 10px;
+  .card-author {
+      font-size: 1.2em;
+      color: #888;
+      margin-bottom: 15px;
   }
   
   .card-text {
-    font-size: 1em;
-    margin-bottom: 10px;
+      font-size: 1em;
+      line-height: 1.5;
+      color: #555;
   }
 
   nav {
@@ -106,4 +120,75 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
+  }
+
+  dialog {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  form input,
+  form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  form textarea {
+    resize: vertical;
+  }
+  
+  menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  menu button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  menu button[value="cancel"] {
+    background-color: #0a1e33;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  menu button[value="confirm"] {
+    background-color: #0a1e33;
+    color: white;
   }
